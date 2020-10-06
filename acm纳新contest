@@ -16,3 +16,34 @@ int main()
     }
 	return 0;
 }
+//B
+#include<stdio.h>
+int main()
+{
+    int sum(int n);
+    int n[1000];
+    int out[1000];
+    int i=0,j=0;
+   while((scanf("%d",&n[i]))==1)
+   { 
+       out[i]=sum(n[i]);
+       i++;
+   }
+   for(j=0;j<i;j++)
+   {
+       printf("%d\n",out[j]);
+   }
+	return 0;
+}
+int sum(int n)
+{
+    int sum=0;
+    if(n%2==0)
+    {
+        sum=(n+1)*n/2;
+    }else
+    {
+        sum=(n+1)*(n-1)/2+(n+1)/2;
+    }
+    return sum;
+}
