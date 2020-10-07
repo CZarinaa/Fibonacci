@@ -270,3 +270,106 @@ int main()
     //}
     return 0;
 }
+//G
+#include<stdio.h>
+int mex(int arr[],int size);
+int main()
+{
+    int n=0;
+    scanf("%d",&n);
+    int data[n];
+    int i=0;
+    for(i=0;i<n;i++)
+    {
+        scanf("%d",&data[i]);
+    }
+    
+    int a[n],b[n];
+    for(i=0;i<n;i++)
+    {
+        a[i]=-1;
+        b[i]=-1;
+    }
+    int j=0;
+    int Ahas=0;
+    int Bhas=0;
+    int ca=0,cb=0;
+    for(i=0;i<n;i++)
+    {
+        Ahas=0;
+        Bhas=0;
+        for(j=0;j<n;j++)
+        {
+            if(a[j]==data[i])
+            {
+                Ahas=1;
+                ca++;
+            }
+            if(b[j]==data[i])
+            {
+                Bhas=1;
+                cb++;
+            }
+        }
+        if(Ahas==1 && Bhas==0)
+        {
+            b[i]=data[i];
+        }
+        else if(Bhas==1 && Ahas==0)
+        {
+            a[i]=data[i];
+        }
+        else if(Ahas==0 && Bhas==0)
+        {
+            a[i]=data[i];
+        }
+        else if(Ahas==1 && Bhas==1)
+        {
+            if(ca>cb)
+            {
+                b[i]=data[i];
+            }
+            else
+            {
+                a[i]=data[i];
+            }
+        }
+    }
+    
+    // for(i=0;i<n;i++)
+    // {
+    //     printf("%d ",a[i]);
+    //     // printf("\n");
+    //     // printf("%d ",b[i]);
+    // }
+    // printf("\n");
+    // for(i=0;i<n;i++)
+    // {
+    //     printf("%d ",b[i]);
+    // }
+    int out=0;
+    
+    out=mex(a[],n);
+    // printf("%d",out);
+    return 0;
+}
+int mex(int arr[],int size)
+{
+    int i=0;
+    int j=0;
+    int Has=0;
+    for(i=0;i<size;i++)
+    {
+        for(j=0;j<size;j++)
+        {
+            if(i==arr[j])
+            {
+                Has=1;
+            }
+        }
+        if(Has==0)
+        {
+            return i;
+        }
+    }
+}
