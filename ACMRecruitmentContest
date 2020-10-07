@@ -69,7 +69,7 @@ int main()
     printf("%d",t);
     return 0;
 }
-//C
+//C 四小时AC一道题的快乐无与伦比
 #include<stdio.h>
 int main() {
     int n=0;
