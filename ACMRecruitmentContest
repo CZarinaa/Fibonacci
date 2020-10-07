@@ -85,26 +85,34 @@ int main() {
     char a[max+1], b[max+1];
 
     int i = 0, j = 0;
+    for(i=0;i<max+1;i++)
+    {
+        a[i]=0;
+        b[i]=0;
+    }
 
     for(i = lena-1; i >= 0; i--)
     {
         a[i] = s1[j] - '0';
         j++;
     }
-    for(i=max+1-lena;i<max+1;i++)
-    {
-        a[i]=0;
-    }
+    // for(i=max;i>max+1-lena;i--)
+    // {
+    //     a[i]=0;
+    // }
     j=0;
     for(i=lenb-1;i>=0;i--)
     {
         b[i]=s2[j] - '0';
         j++;
+        
     }
-    for(i=max+1-lenb;i<max+1;i++)
-    {
-        b[i]=0;
-    }
+    // for(i=max;i>max+1-lenb;i--)
+    // {
+    //     b[i]=0;
+    // }
+    for(i=0;i<max+1;i++)
+    {printf("%d ",b[i]);}
 
     char sum[max+1];
 
