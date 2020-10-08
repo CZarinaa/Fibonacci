@@ -1,0 +1,227 @@
+Problem A: A+B 输入输出练习I
+Time Limit:1.000s Memory Limit:32MB
+Submit
+Status
+Description
+你的任务是计算a+b。这是为了acm初学者专门设计的题目。你肯定发现还有其他题目跟这道题的标题类似，这些问题也都是专门为初学者提供的。
+
+Input
+输入包含一系列的a和b对，通过空格隔开。一对a和b占一行。
+
+数据保证可以用int装下
+Output
+对于输入的每对a和b，你需要依次输出a、b的和。
+如对于输入中的第二对a和b，在输出中它们的和应该也在第二行。
+
+Sample Input 点击复制
+1 5
+10 20
+Sample Output 点击复制
+6
+30
+
+Problem B: Sum Problem
+Time Limit:0.500s Memory Limit:33MB
+Submit
+Status
+Description
+给定m行数据
+每一行给出一个数n，现有函数sum（n）=1+2+3……+n，试求每个sum（n）的值
+Input
+输入若干行，每一行代表一个数n
+Output
+输出每一行对应的n所计算出的sum（n）的值，每一个值单独占一行
+Sample Input 点击复制
+1
+100
+Sample Output 点击复制
+1
+5050
+
+Problem C: 一道高精度题目
+Time Limit:2.000s Memory Limit:128MB
+Submit
+Status
+Description
+就是一道赤裸裸的高精加法
+高精度加法是信息学的一种重要算法。这种算法使用多个存储单位进行计算，因此它的计算范围超过一般使用一个存储单位的算法。也是一些信息学竞赛的常考题目。
+换句话说就是用程序模拟笔算加法的过程
+
+
+
+
+
+
+注：数据范围会比unsigned longlong大，所以不要想着几行解决
+又注：如果你喜欢用python或者java等语言可以完全跳过这道题
+再注：学习算法要的是态度，偷奸耍滑式的输出是不好的哦
+
+Input
+第一行是数据数n，代表数据的组数
+接下来的n行代表输入的数据
+每组测试数据仅有一行输入，是由空格隔开的两个极大的正加数
+Output
+输出占n行，每行输出一组数据计算而得的答案
+注意：不会有任何类似逗号的输出
+Sample Input 点击复制
+1
+123456789 987654321
+Sample Output 点击复制
+1111111110
+
+
+Problem D: 三连击
+Time Limit:1.000s Memory Limit:128MB
+Submit
+Status
+Description
+将1,2,⋯,9共9个数分成3组，分别组成3个三位数，且使这3个三位数构成1:2:3的比例，试求出所有满足条件的3个三位数。
+禁止直接复制黏贴！ 但是可以在本地算好再复制
+Input
+无
+Output
+若干行，每行3个数。每行按照第1个数字升序排列。
+Sample Output 点击复制
+192 384 576
+219 438 657
+273 546 819
+327 654 981
+
+
+Problem E: 火星人
+Time Limit:1.000s Memory Limit:128MB
+Submit
+Status
+Description
+人类终于登上了火星的土地并且见到了神秘的火星人。人类和火星人都无法理解对方的语言，但是我们的科学家发明了一种用数字交流的方法。这种交流方法是这样的，首先，火星人把一个非常大的数字告诉人类科学家，科学家破解这个数字的含义后，再把一个很小的数字加到这个大数上面，把结果告诉火星人，作为人类的回答。
+
+火星人用一种非常简单的方式来表示数字――掰手指。火星人只有一只手，但这只手上有成千上万的手指，这些手指排成一列，分别编号为1,2,3…。火星人的任意两根手指都能随意交换位置，他们就是通过这方法计数的。
+
+一个火星人用一个人类的手演示了如何用手指计数。如果把五根手指――拇指、食指、中指、无名指和小指分别编号为1,2,3,4和5，当它们按正常顺序排列时，形成了5位数12345，当你交换无名指和小指的位置时，会形成5位数12354，当你把五个手指的顺序完全颠倒时，会形成54321，在所有能够形成的120个5位数中，12345最小，它表示1；12354第二小，它表示2；54321最大，它表示120。下表展示了只有3根手指时能够形成的6个3位数和它们代表的数字：
+
+三进制数
+
+123
+132
+213
+231
+312
+321
+
+代表的数字
+
+1
+2
+3
+4
+5
+6
+
+现在你有幸成为了第一个和火星人交流的地球人。一个火星人会让你看他的手指，科学家会告诉你要加上去的很小的数。你的任务是，把火星人用手指表示的数与科学家告诉你的数相加，并根据相加的结果改变火星人手指的排列顺序。输入数据保证这个结果不会超出火星人手指能表示的范围。
+
+
+Input
+共三行。
+第一行一个正整数NN，表示火星人手指的数目
+第二行是一个正整数M，表示要加上去的小整数（1≤M≤100）。
+下一行是11到N这N个整数的一个排列，用空格隔开，表示火星人手指的排列顺序。
+Output
+N个整数，表示改变后的火星人手指的排列顺序。每两个相邻的数中间用一个空格分开，不能有多余的空格。
+Sample Input 点击复制
+5
+3
+1 2 3 4 5
+Sample Output 点击复制
+1 2 4 5 3
+HINT
+stlnb 
+
+Problem F: 求幂
+Time Limit:1.000s Memory Limit:128MB
+Submit
+Status
+Description
+给你三个整数 b,p,k，求 b^p mod k 
+
+
+Input
+输入只有一行三个整数，分别代表 b,p,k
+Output
+输出一个整数，即你的答案
+Sample Input 点击复制
+2 10 9
+Sample Output 点击复制
+7
+
+Problem G: Subset Mex
+Time Limit:1.000s Memory Limit:128MB
+Submit
+Status
+Description
+Given a set of integers (it can contain equal elements).
+You have to split it into two subsets A and B (both of them can contain equal elements or be empty). You have to maximize the value of mex(A)+mex(B).
+Here mexmex of a set denotes the smallest non-negative integer that doesn't exist in the set. For example:
+mex({1,4,0,2,2,1})=3
+mex({3,3,2,1,3,0,0})=4
+mex(∅)=0 (mex for empty set)
+The set is splitted into two subsets A and B if for any integer number x the number of occurrences of x into this set is equal to the sum of the number of occurrences of x into A and the number of occurrences of x into B.
+Input
+The input consists of multiple test cases. The first line contains an integer t (1≤t≤1001≤t≤100) — the number of test cases. The description of the test cases follows.
+The first line of each test case contains an integer n (1≤n≤100) — the size of the set.
+The second line of each testcase contains n integers a1,a2,…an (0≤ai≤100) — the numbers in the set.
+Output
+For each test case, print the maximum value of mex(A)+mex(B).
+Sample Input 点击复制
+4
+6
+0 2 1 5 0 1
+3
+0 1 2
+4
+0 2 0 1
+6
+1 2 3 4 5 6
+Sample Output 点击复制
+5
+3
+4
+0
+HINT
+In the first test case, A={0,1,2},B={0,1,5} is a possible choice.
+In the second test case, A={0,1,2},B=∅ is a possible choice.
+In the third test case, A={0,1,2},B={0} is a possible choice.
+In the fourth test case, A={1,3,5},B={2,4,6} is a possible choice.
+
+Problem H: Maximum Product
+Time Limit:1.000s Memory Limit:128MB
+Submit
+Status
+Description
+You are given an array of integers a1,a2,…,ana1,a2,…,an. Find the maximum possible value of aiajakalat among all five indices (i,j,k,l,t) (i<j<k<l<t).
+Input
+The input consists of multiple test cases. The first line contains an integer t (1≤t≤2⋅104) — the number of test cases. The description of the test cases follows.
+The first line of each test case contains a single integer n (5≤n≤105) — the size of the array.
+The second line of each test case contains n integers a1,a2,…,an (−3×103≤ai≤3×103) — given array.
+It's guaranteed that the sum of n over all test cases does not exceed 2⋅105.
+Output
+For each test case, print one integer — the answer to the problem.
+Sample Input 点击复制
+4
+5
+-1 -2 -3 -4 -5
+6
+-1 -2 -3 1 2 -1
+6
+-1 0 0 0 -1 -1
+6
+-9 -7 -5 -3 -2 1
+Sample Output 点击复制
+-120
+12
+0
+945
+HINT
+In the first test case, choosing a1,a2,a3,a4,a5 is a best choice: (−1)⋅(−2)⋅(−3)⋅(−4)⋅(−5)=−120.
+In the second test case, choosing a1,a2,a3,a5,a6 is a best choice: (−1)⋅(−2)⋅(−3)⋅2⋅(−1)=12.
+In the third test case, choosing a1,a2,a3,a4,a5 is a best choice: (−1)⋅0⋅0⋅0⋅(−1)=0.
+In the fourth test case, choosing a1,a2,a3,a4,a6 is a best choice: (−9)⋅(−7)⋅(−5)⋅(−3)⋅1=945.
