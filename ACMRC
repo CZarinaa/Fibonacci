@@ -222,8 +222,7 @@ int main()
         {
             std::cin >> data[x];
         }
-        if (n >= 5)
-        {
+
             int rf[n];////reflection //n
             for (x = 0; x < 5; x++)
             {
@@ -254,7 +253,7 @@ int main()
             for (i = 0; i < times; i++)
             {
                 record = 1;
-                std::next_permutation(rf, rf + 7);//n
+                std::next_permutation(rf, rf + n);//n
                 for (j = 0; j < n; j++)
                 {
                     if (rf[j] == 1)
@@ -279,14 +278,6 @@ int main()
             }
 
             max[t] = out[times - 1];
-        }else
-        {
-            int c = 0;
-            for (c = 0; c < n; c++)
-            {
-                max[t] = max[t] * data[c];
-            }
-        }
     }
     for (t = 0; t < total; t++)
     {
